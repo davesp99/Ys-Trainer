@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ys Trainer</title>
+    <link rel="stylesheet" href="./style_reserva.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="./img/logo.png" alt="Logo de Ys Trainer" class="logo">
+            <button class="header-button">Unete ya</button>
+        </div>
+    </header>
+    <main class="content">
+        <h2>Reservar entrenador personal</h2>
+        <img src="./img/reserv-entrenador.jpg" alt="Publicidad" class="ad-image">
+    </main>  
+  <form class="formulario">
+        <!-- Fecha de la reseva -->
+        <label for="fecha-reseva-entrenador">Fecha de la reseva:</label>
+        <input type="date" id="fecha-reseva-entrenador" name="fecha-reseva-entrenador" placeholder="Fecha de la reserva" required>
+
+        <!-- Hora de la reserva -->
+        <label for="hora-reserva-entrenador">Hora de la reseva:</label>
+        <input type="time" id="hora-reserva-entrenador" name="hora-reserva-entrenador" placeholder="Hora de la reserva" required>
+
+        <!-- Escoge tu entrenador(a) -->
+        <label for="select-entrenador">Escoge tu entrenador(a):</label>
+        <select id="select-entrenador" name="select-entrenador" required>
+        <option value="yasir-serrano">Yasir Serrano</option>
+        <option value="carlos-bacca">Carlos Bacca</option>
+        <option value="james-rodriguez">James Rodríguez</option>
+        </select>
+
+         <!-- Botón de Envío -->
+         <button type="submit" class="form-button">Enviar</button>
+        </form>
+
+    <footer class="footer">
+        <p>&copy; Ys Trainer. Todos los derechos reservados.</p>
+
+        
+    </footer>
+</body>
+</html>

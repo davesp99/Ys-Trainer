@@ -1,0 +1,134 @@
+/* Configuración general */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Encabezado */
+.header {
+    background-color: #D9D9D9;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre el logo y el texto */
+}
+
+.logo {
+    width: 40px; /* Ajusta el ancho del logo */
+    height: auto; /* Mantiene las proporciones originales de la imagen */
+    max-height: 50px; /* Limita la altura máxima */
+    object-fit: contain; /* Asegura que la imagen no se recorte */
+}
+
+/* Título */
+.logo-container h1 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header-button {
+    background-color: #FFC107; /* Color de fondo */
+    color: #333; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 14px; /* Tamaño del texto */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin-left: auto; /* Empuja el botón hacia la derecha */
+}
+
+.header-button:hover {
+    background-color: #FFD54F; /* Color más claro al pasar el ratón */
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Imagen de publicidad */
+.ad-image {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 600px; /* Limita el ancho máximo */
+    height: auto; /* Mantiene las proporciones */
+    border-radius: 10px; /* Opcional: esquinas redondeadas */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Opcional: sombra */
+}
+
+/* Formulario */
+.formulario {
+    margin-top: 20px; /* Espacio entre la imagen y el formulario */
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en columna */
+    gap: 15px; /* Espacio entre los campos */
+    padding: 20px;
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Estilos para etiquetas */
+.formulario label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Campos de entrada */
+.formulario input,
+.formulario textarea {
+    width: 100%; /* Ocupan todo el ancho del contenedor */
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+}
+
+/* Botón del formulario */
+.form-button {
+    background-color: #FFC107; /* Color azul */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Hover en el botón */
+.form-button:hover {
+    background-color: #FFD54F; /* Color más oscuro al pasar el ratón */
+}
+
+
+/* Pie de página */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+/* Diseño Responsive */
+@media (max-width: 768px) {
+    .nav ul {
+        flex-direction: column;
+    }
+
+    .nav a {
+        padding: 15px 0;
+    }
+}
